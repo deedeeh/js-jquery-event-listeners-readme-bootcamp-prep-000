@@ -8,14 +8,14 @@ function getIt() {
 
 function frameIt() {
   $("img").on("load", function() {
-    $("img").addClass("tasty").css("border", "1px solid red");
+    $("img").addClass("tasty");
   });
 }
 
 function pressIt() {
   $("input:first-child").on("keydown", function(key) {
     if(key.which === 71) {
-      alert("you have pressed G");
+      alert("you pressed G");
     }
   });
 }
